@@ -1,24 +1,20 @@
 {
-  "name": "aorbitonomics",
+  "name": "orbitonomics",
+  "version": "1.0.0",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
   "dependencies": {
-    "react": "^19.2.3",
-    "react-dom": "^19.2.3",
-    "react-router-dom": "^7.11.0",
-    "lucide-react": "^0.562.0",
-    "recharts": "^3.6.0"
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.1.1",
+    "lucide-react": "^0.468.0",
+    "recharts": "^2.15.0"
   },
   "devDependencies": {
-    "@types/node": "^22.14.0",
-    "@vitejs/plugin-react": "^5.0.0",
-    "typescript": "~5.8.2",
-    "vite": "^6.2.0"
+    "esbuild": "^0.24.2",
+    "typescript": "^5.7.2"
+  },
+  "scripts": {
+    "build": "esbuild index.tsx --bundle --outfile=index.js --format=esm --minify --external:react --external:react-dom --external:react-router-dom --external:lucide-react --external:recharts",
+    "start": "echo 'Use a local development server that supports TSX or run the build script.'"
   }
 }
