@@ -2,6 +2,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Map, ShieldCheck, Globe, Activity, Zap, Layers } from 'lucide-react';
+import collaborativeAnalysisImg from '../assets/collaborative-analysis.png';
+import geospatialDiscussionImg from '../assets/geospatial-discussion.png';
 
 const Home: React.FC = () => {
   const stats = [
@@ -58,14 +60,14 @@ const Home: React.FC = () => {
           <div className="flex flex-col md:flex-row gap-8 items-center justify-center mb-12">
             <div className="max-w-md">
               <img 
-                src="/assets/collaborative-analysis.png" 
+                src={collaborativeAnalysisImg} 
                 alt="Team collaborating on satellite impact analysis" 
                 className="rounded-2xl shadow-xl border border-white/10 w-full h-auto opacity-90"
               />
             </div>
             <div className="max-w-md">
               <img 
-                src="/assets/geospatial-discussion.png" 
+                src={geospatialDiscussionImg} 
                 alt="Professional team analyzing geospatial data" 
                 className="rounded-2xl shadow-xl border border-white/10 w-full h-auto opacity-90"
               />
@@ -107,14 +109,14 @@ const Home: React.FC = () => {
           <div className="flex flex-col md:flex-row gap-6 justify-center items-center max-w-4xl mx-auto">
             <div className="max-w-md">
               <img 
-                src="/assets/collaborative-analysis.png" 
+                src={collaborativeAnalysisImg} 
                 alt="Team analysis session" 
                 className="rounded-xl shadow-lg border border-white/10 w-full h-auto opacity-85"
               />
             </div>
             <div className="max-w-md">
               <img 
-                src="/assets/geospatial-discussion.png" 
+                src={geospatialDiscussionImg} 
                 alt="Geospatial data analysis" 
                 className="rounded-xl shadow-lg border border-white/10 w-full h-auto opacity-85"
               />
@@ -149,14 +151,14 @@ const Home: React.FC = () => {
           <div className="flex flex-col md:flex-row gap-6 justify-center items-center max-w-4xl mx-auto">
             <div className="max-w-md">
               <img 
-                src="/assets/geospatial-discussion.png" 
+                src={geospatialDiscussionImg} 
                 alt="Professional geospatial analysis" 
                 className="rounded-xl shadow-lg border border-white/10 w-full h-auto opacity-85"
               />
             </div>
             <div className="max-w-md">
               <img 
-                src="/assets/collaborative-analysis.png" 
+                src={collaborativeAnalysisImg} 
                 alt="Collaborative impact mapping" 
                 className="rounded-xl shadow-lg border border-white/10 w-full h-auto opacity-85"
               />
@@ -175,14 +177,14 @@ const Home: React.FC = () => {
           <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-12 max-w-4xl mx-auto">
             <div className="max-w-md">
               <img 
-                src="/assets/collaborative-analysis.png" 
+                src={collaborativeAnalysisImg} 
                 alt="Team collaboration" 
                 className="rounded-xl shadow-lg border-2 border-white/20 w-full h-auto opacity-90"
               />
             </div>
             <div className="max-w-md">
               <img 
-                src="/assets/geospatial-discussion.png" 
+                src={geospatialDiscussionImg} 
                 alt="Data analysis team" 
                 className="rounded-xl shadow-lg border-2 border-white/20 w-full h-auto opacity-90"
               />
